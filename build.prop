@@ -1,0 +1,54 @@
+ro.product.system.brand=Redmi
+ro.product.system.device=begonia
+ro.product.system.manufacturer=Xiaomi
+ro.product.system.model=Redmi Note 8 Pro
+ro.product.system.name=begonia
+
+ro.build.product=begonia
+ro.lineage.device=begonia
+
+# Bluetooth
+persist.bluetooth.avrcpversion=avrcp16
+
+# VoLTE
+persist.dbg.ims_volte_enabled=1
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+persist.radio.rat_on=combine
+persist.radio.data_ltd_sys_ind=1
+persist.radio.data_con_rprt=1
+persist.radio.calls.on.ims=1
+persist.data.iwlan.enable=true
+persist.data.iwlan=1
+persist.data.iwlan.ipsec.ap=1
+persist.radio.calls.on.ims=1
+persist.radio.VT_ENABLE=1
+persist.sys.cust.lte_config=true
+
+# Netflix quality parameters
+ro.netflix.bsp_rev=MTK6785-18758-1
+
+# Camera
+persist.camera.eis.enable=1
+ro.camera.sensor.id_rear=0
+ro.camera.sensor.id_front=1
+ro.camera.sensor.highres.0=[[9248:6936:33:0],[9280:6944:32:1]]
+ro.camera.sensor.highres.1=[[5184:3880:33:0],[5184:2920:33:0],[5184:2392:33:0],[3888:3888:33:0]]
+ro.camera.sensor.highres.0.max=9280:6944
+ro.camera.highres.packagelist=org.lineageos.snap,org.codeaurora.snapcam
+persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera
+vendor.camera.aux.packageblacklist=org.telegram.messenger,com.microsoft.teams,com.discord
+vendor.camera2.aux.mainids=0,1,21,22
+vendor.camera2.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera
+
+# Charger
+ro.charger.enable_suspend=0
+ro.charger.disable_init_blank=1
+ro.product.charger.unplugged_shutdown_time=1000
+persist.vendor.quick.charge=1
+
+# Audio
+ro.camera.sound.forced=0
+ro.audio.silent=0
