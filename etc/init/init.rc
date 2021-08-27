@@ -1,0 +1,17 @@
+service charger /bin/charger
+    class charger
+    user system
+    group system shell input graphics wakelock
+
+# Healthd can trigger a full boot from charger mode by signaling this
+# property when the power button is held.
+on property:sys.boot_from_charger_mode=1
+    class_stop charger
+    trigger late-init
+
+on charger && property:ro.hardware=mt*
+    write /sys/class/leds/lcd-backlight/trigger "backlight"
+    write /sys/class/android_usb/android0/enable 1
+
+on charger
+    class_start charger
