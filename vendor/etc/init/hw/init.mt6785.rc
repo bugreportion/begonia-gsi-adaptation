@@ -15,3 +15,4 @@ service charger /system/bin/charger
     #seclabel u:r:charger:s0
     group system graphics
     seclabel u:r:healthd:s0
+	
